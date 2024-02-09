@@ -1,0 +1,283 @@
+#myHeader {
+  padding: 80px;
+  text-align: center;
+  background-image: url("Images/bg.jpg");
+  background-size: cover;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+/* Style the image and text */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.text {
+  width: 50%;
+}
+
+.image {
+  width: 40%;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  /* margin-right: 20px; */
+  border-radius: 20px;
+}
+
+
+/* Style the navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  width: 99%;
+  border-radius: 30px;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.search {
+  float: right;
+  color: white;
+  padding: 12px 75px;
+
+}
+
+.navbar input {
+  border: 2px solid black;
+  border-radius: 14px;
+  padding: 3px 17px;
+  width: 200px;
+}
+
+.button {
+  background-color: black border none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button1 {
+  background-color: black;
+  border-radius: 10px;
+}
+
+input[type=button]:hover {
+  background-color: #3e8e41; /* Change to green color */
+}
+
+
+.mydiv {
+  border: 10px outset rgb(12, 30, 228);
+  background-color: powderblue;
+  text-align: center;
+}
+
+/* Style the FAQ */
+
+.container2 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.question {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 20px 0 10px 0;
+  cursor: pointer;
+}
+
+.answer {
+  margin-bottom: 20px;
+  display: none;
+}
+
+.answer p {
+  margin: 0;
+}
+
+.answer.show {
+  display: block;
+}
+
+/* Style the Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer h3 {
+  color: #f8f5f5;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  footer {
+    text-align: center;
+  }
+
+  footer ul {
+    margin-top: 20px;
+  }
+}
+
+
+/*examples section */
+.examples-header {
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.examples-card {
+  width: 23%;
+  position: relative;
+  min-height: 300px;
+  background: #333;
+}
+
+
+.card-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: white;
+}
+
+/* examples section */
+
+.container3 {
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: var(--padding-inline-section);
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+
+.examples-section {
+  padding: 80px var(--padding-inline-section)
+}
+
+.examples-header {
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.examples-area {
+  justify-content: space-between;
+  margin-block: 30px;
+  flex-wrap: wrap;
+}
+
+.examples-card {
+  width: 23%;
+  position: relative;
+  height: 300px;
+  background: black;
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(Images/ayush.jpeg);
+  background-size: cover;
+  transition: 0.2s ease-out;
+}
+
+.examples-card:hover {
+  box-shadow: 0 0 40px #888;
+}
+
+.examples-card:nth-child(3) {
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(Images/anu.jpeg);
+  background-size: cover;
+}
+
+.examples-card:nth-child(4) {
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(Images/tanu.jpeg);
+  background-size: cover;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: white;
+}
+
+/* cta section */
+
+.cta-section-container {
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+  text-align: center;
+}
+
+.cta-section {
+  padding: 120px var(--padding-inline-section) 80px;
+  background-color: #183b54;
+}
+
+.cta-section-container p {
+  color: white;
+  margin-top: 20px;
+}
+
+#myButton {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

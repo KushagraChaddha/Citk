@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SignIn Form</title>
+  <style>
+    body {
+      background-color: #0f0f0f;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      text-align: center;
+    }
+
+    header {
+      background-color: #FFA07A;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 36px;
+      color: #FFFFFF;
+      text-shadow: 2px 2px #333333;
+      margin-top: 5px;
+    }
+
+    form {
+      width: 500px;
+      margin: 0 auto;
+      margin-top: 50px;
+      background-color: #1c1c1c;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=password] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    input[type=submit] {
+      background-color: #FFA07A;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+  background-color: #3e8e41; /* Change to green color */
+}
+
+  </style>
+  <script type="text/Javascript">
+      function fun(){
+      alert("Your Response Is Registered");
+      }
+      </script>
+</head>
+
+<body>
+  <header>
+    <h1>Sign In</h1>
+  </header>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <input type="submit" value="Sign In" onclick="fun();">
+  </form>
+</body>
+
+</html>

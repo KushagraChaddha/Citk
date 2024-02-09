@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cook Booking Site - Home</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global styles */
+        body {
+            font-family: sans-serif;
+            background-color: #FFFFFF;
+            color: #333333;
+            line-height: 1.5;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+            background-color: #FFA07A;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #FFDAB9;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #FFFFFF;
+            text-shadow: 2px 2px #333333;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #FFA07A;
+            text-shadow: 2px 2px #333333;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #FFA07A;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #FFFFFF;
+            color: #FFDAB9;
+            border: 2px solid #FFDAB9;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #FFFFFF;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 30%;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 290px;
+            object-fit: cover;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin: 20px 0 10px 0;
+            color: #333333;
+        }
+
+        .card p {
+            font-size: 18px;
+            margin-bottom padding: 20px;
+            text-align: center;
+            color: #666666;
+        }
+
+        /* Media queries */
+        @media screen and (max-width: 1024px) {
+            .card {
+                width: 45%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+
+        .card p.title {
+            font-size: 18px;
+            color: grey;
+            margin: 10px;
+        }
+
+        .button {
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #3e8e41;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Find the Perfect Chef for Your Event</h1>
+    </header>
+    <nav>
+        <p>Get started today and book a professional chef for your next event or gathering.</p>
+        <button>Book Now</button>
+    </nav>
+    <div class="spacer" style="height: 10vh;"></div>
+
+    <section>
+        <div class="card">
+            <img src="Images/ram.jpg" alt="Person 1">
+            <h3>Ram Prasad</h3>
+            <p class="title">Veg/South-Indian</p>
+            <p>Experience - 5+ year's
+                Charges - Rs1000/person
+                Rating - 4.3</p>
+            <a href="#" class="button">Read More</a>
+        </div>
+
+        <div class="card">
+            <img src="Images/sita.jpg" alt="Person 2">
+            <h3>Sita Devi</h3>
+            <p class="title">Veg/North-Indian</p>
+            <p>Experience - 6+ year's
+                Charges - Rs1000/person
+                Rating - 5</p>
+            <a href="#" class="button">Read More</a>
+        </div>
+
+        <div class="card">
+            <img src="Images/mukesh.jpeg" alt="Person 3">
+            <h3>Mukesh Kumar</h3>
+            <p class="title">Veg/Non-veg</p>
+            <p>Experience - 7+ year's
+                Charges - Rs1000/person
+                Rating - 4.2</p>
+            <a href="#" class="button">Read More</a>
+        </div>
+        <div class="card">
+            <img src="Images/sarabjeet.jpeg" alt="Person 1">
+            <h3>Sarabjeet</h3>
+            <p class="title">Veg/Non-Veg/Punjabi</p>
+            <p>Experience - 8+ year's
+                Charges - Rs1000/person
+                Rating - 5</p>
+            <a href="#" class="button">Read More</a>
+        </div>
+
+        <div class="card">
+            <img src="Images/shraddha.jpeg" alt="Person 2">
+            <h3>Shraddha</h3>
+            <p class="title">Veg/Gujrati</p>
+            <p>Experience - 5+ year's
+                Charges - Rs1000/person
+                Rating - 4.5</p>
+            <a href="#" class="button">Read More</a>
+        </div>
+
+        <div class="card">
+            <img src="Images/lakshmi.jpeg" alt="Person 3">
+            <h3>Lakshmi</h3>
+            <p class="title">Veg/Non-veg/South-Indian</p>
+            <p>Experience - 10+ year's
+                Charges - Rs1000/person
+                Rating - 4.5</p>
+            <a href="#" class="button">Read More</a>
+        </div>
+    </section3>
+</body>
+
+</html>
